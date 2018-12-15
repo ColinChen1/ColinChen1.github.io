@@ -12502,7 +12502,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Graphing-Humidity-Over-Time">Graphing Humidity Over Time<a class="anchor-link" href="#Graphing-Humidity-Over-Time">&#182;</a></h3><p>We can do the same for humidity. It would appear that the location has a fairly consistent humidity regardless of season.</p>
+<h4 id="Graphing-Humidity-Over-Time">Graphing Humidity Over Time<a class="anchor-link" href="#Graphing-Humidity-Over-Time">&#182;</a></h4><p>We can do the same for humidity. It would appear that the location has a fairly consistent humidity regardless of season.</p>
 
 </div>
 </div>
@@ -12561,7 +12561,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Graphing-Wind-Speed-Over-Time">Graphing Wind Speed Over Time<a class="anchor-link" href="#Graphing-Wind-Speed-Over-Time">&#182;</a></h3><p>Doing the same with wind speed. You can see that wind speed is a little bit more spread out that humidity, which means that on any given day, the wind speed may be very high.</p>
+<h4 id="Graphing-Wind-Speed-Over-Time">Graphing Wind Speed Over Time<a class="anchor-link" href="#Graphing-Wind-Speed-Over-Time">&#182;</a></h4><p>Doing the same with wind speed. You can see that wind speed is a little bit more spread out that humidity, which means that on any given day, the wind speed may be very high.</p>
 
 </div>
 </div>
@@ -12620,7 +12620,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Boxplots---Another-Way-to-View-Your-Data">Boxplots - Another Way to View Your Data<a class="anchor-link" href="#Boxplots---Another-Way-to-View-Your-Data">&#182;</a></h3><p>SeaBorn can also create boxplots to display your data. We create three box plots showing temperature, humitidy, and wind speed based on whether or not the day was raining or snowing.</p>
+<h4 id="Boxplots---Another-Way-to-View-Your-Data">Boxplots - Another Way to View Your Data<a class="anchor-link" href="#Boxplots---Another-Way-to-View-Your-Data">&#182;</a></h4><p>SeaBorn can also create boxplots to display your data. We create three box plots showing temperature, humitidy, and wind speed based on whether or not the day was raining or snowing.</p>
 
 </div>
 </div>
@@ -12766,7 +12766,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Pair-Plots">Pair Plots<a class="anchor-link" href="#Pair-Plots">&#182;</a></h3><p>Here we use SeaBorn's pair plot libraries in order to graph each variable vs. each other.</p>
+<h4 id="Pair-Plots">Pair Plots<a class="anchor-link" href="#Pair-Plots">&#182;</a></h4><p>Here we use SeaBorn's pair plot libraries in order to graph each variable vs. each other.</p>
 
 </div>
 </div>
@@ -12823,7 +12823,12 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Distribution-Plots">Distribution Plots<a class="anchor-link" href="#Distribution-Plots">&#182;</a></h3><p>Creating distribution plots to show the distribution of all temperatures, humidity, and wind speeds.</p>
+<h4 id="Distribution-Plots">Distribution Plots<a class="anchor-link" href="#Distribution-Plots">&#182;</a></h4><p>We also create distribution plots to show the distribution of all temperatures, humidity, and wind speeds.</p>
+<ul>
+<li>Temperature appears to be bimodal, with the most common temperatures being around 8 Celcius and 21 Celcius. </li>
+<li>Humidity seems to have a very small left skew, with most of it's commality being centered around 70-80% humidity. </li>
+<li>Wind speed has a right skew, with it's mode being around 10 km/h, there are many instances where the wind goes above 20 km/hr.</li>
+</ul>
 
 </div>
 </div>
@@ -12972,9 +12977,19 @@ div#notebook {
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Predicting-Future-Trends">Predicting Future Trends<a class="anchor-link" href="#Predicting-Future-Trends">&#182;</a></h3><hr>
+<p>In this final section, we will focus on creating models using Linear Regression to accurately predict the temperature at this location. We use Scikit to create a Linear Regression model of all the temperatures separated by precipitation type, rain or snow, and then use that to create coefficients to then create a linear regression line on the scatterplot.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[66]:</div>
+<div class="prompt input_prompt">In&nbsp;[75]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#create a column that represents the date in milliseconds</span>
@@ -13010,6 +13025,18 @@ div#notebook {
 <div class="output_wrapper">
 <div class="output">
 
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[[  2.29230228e-10]]
+[[  4.81050273e-09]]
+</pre>
+</div>
+</div>
 
 <div class="output_area">
 
