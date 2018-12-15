@@ -11830,7 +11830,7 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Displaying the first five rows of our dataframe. </span>
-<span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -11992,7 +11992,7 @@ div#notebook {
 
 <span class="c1">#Dropped unncessary columns. Don&#39;t run again or it will fail </span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">columns</span><span class="p">)</span>
-<span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12138,7 +12138,7 @@ div#notebook {
     <span class="n">date_col</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">split_date</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Formatted Date&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">date_col</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">rename</span><span class="p">({</span><span class="s1">&#39;Formatted Date&#39;</span><span class="p">:</span><span class="s1">&#39;Date&#39;</span><span class="p">},</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;columns&#39;</span><span class="p">)</span>
-<span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
 </div>
